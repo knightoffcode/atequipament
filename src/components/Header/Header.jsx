@@ -56,45 +56,65 @@ function Header() {
     ]
     return (
         <header className='header'>
-            <div className='header__wrapper'>
-                <ul className='header__top'>
+            <div className="header__top">
+                <ul className='header__top__list'>
                     <li>
                         <a
                             className='header__link header__link--top header__link--top--first'
                             href=''
                         >
-                            Powered by
+                            Telefone (99) 99999999999
                         </a>
                     </li>
                     <li>
-                        <FiMapPin className='header__top__icon' />
-                        <select className='header__select'>
-                            <option>USA</option>
-                        </select>
-                    </li>
-                    <li>
-                        <FiGlobe className='header__top__icon' />
-                        <select className='header__select'>
-                            <option>ENG</option>
-                        </select>
-                    </li>
-                    <li>
-                        <FiDollarSign className='header__top__icon' />
-                        <select className='header__select'>
-                            <option>USD</option>
-                        </select>
-                    </li>
-                    <li>
-                        <a className='header__link header__link--top' href=''>
-                            Customer service
+                        <a
+                            className='header__link header__link--top header__link--top--first'
+                            href=''
+                        >
+                            Email: contato@contato.com
                         </a>
                     </li>
                     <li>
                         <a className='header__link header__link--top' href=''>
-                            Sell on Vega
+                            F
                         </a>
                     </li>
+                    <li>
+                        <a className='header__link header__link--top' href=''>
+                            I
+                        </a>
+                    </li>
+                    {/* <li>
+                            <FiMapPin className='header__top__icon' />
+                            <select className='header__select'>
+                                <option>USA</option>
+                            </select>
+                        </li>
+                        <li>
+                            <FiGlobe className='header__top__icon' />
+                            <select className='header__select'>
+                                <option>ENG</option>
+                            </select>
+                        </li>
+                        <li>
+                            <FiDollarSign className='header__top__icon' />
+                            <select className='header__select'>
+                                <option>USD</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a className='header__link header__link--top' href=''>
+                                Customer service
+                            </a>
+                        </li>
+                        <li>
+                            <a className='header__link header__link--top' href=''>
+                                Sell on Vega
+                            </a>
+                        </li> */}
                 </ul>
+            </div>
+            <div className='header__wrapper'>
                 <div className='header__bottom'>
                     <div className='header__logo'>
                         <span className='header__logo__icon'>{/* Vega Retailers */}</span>
@@ -106,7 +126,7 @@ function Header() {
                             Informe seu CEP
                         </button>
                         <ul className='header__menu__list'>
-                            <div className='header__menu__item'>
+                            {/* <div className='header__menu__item'>
                                 <li className='header__item'>
                                     <a
                                         href='{page.url}'
@@ -126,7 +146,7 @@ function Header() {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {menuPages.map((page, index) => (
                                 <div key={index} className='header__menu__item'>
@@ -169,7 +189,7 @@ function Header() {
                                 support 24/7
                                 </span>
                                 </a>
-                            </li> */}
+                            </li> *
                             <li className='header__item header__item--user'>
                                 <div className='header__search'>
                                     <input
@@ -196,7 +216,7 @@ function Header() {
                                 <a href='/cart' className='header__link header__link--user'>
                                     <AiOutlineShoppingCart className='header__link__icon header__link__icon--user' />
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                         <button className='header__menumobile'>
                             <CiMenuBurger />

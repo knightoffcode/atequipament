@@ -6,7 +6,6 @@ import { FaAngleDown } from 'react-icons/fa'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 /**
  *
  * @returns
@@ -50,26 +49,24 @@ function Highlight() {
     }
     return (
         <div className="banner__head">
-            <div className='banner__wrapper'>
-                <div className='banner__tip'>
-                    <FaAngleDown className='banner__tip__icon' />
-                </div>
-                <Slider {...sliderSettings}>
-                    {
-                        banners
-                            ?
-                            (
-                                banners.map((banner, index) => (
-                                    <div className='banner' key={index}>
-                                        <img className='banner__image' src={banner.url} alt={banner.name} />
-                                    </div>
-                                ))
-                            )
-                            :
-                            null
-                    }
-                </Slider>
+            <div className='banner__tip'>
+                <FaAngleDown className='banner__tip__icon' />
             </div>
+            <Slider {...sliderSettings}>
+                {
+                    banners
+                        ?
+                        (
+                            banners.map((banner, index) => (
+                                <div className='banner' key={index}>
+                                    <img className='banner__image' src={banner.url} alt={banner.name} />
+                                </div>
+                            ))
+                        )
+                        :
+                        null
+                }
+            </Slider>
         </div>
     )
 }
